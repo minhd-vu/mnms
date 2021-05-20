@@ -25,15 +25,9 @@ public class HelloController {
     }
 
     @Post(produces = MediaType.APPLICATION_JSON)
-    public String post(@Body @Valid HelloMessage body) {
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            return mapper.writeValueAsString(body);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-
-        return null;
+    public HelloMessage post(@Body @Valid HelloMessage body) {
+        body.setMessage("You're Awesome!");
+        return body;
     }
 }
 
