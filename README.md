@@ -1,10 +1,15 @@
 # Micronaut Microservice
 
 ## Dependencies
-```
-brew tap adoptopenjdk/openjdk
-brew install adoptopenjdk11 micronaut kafka
-```
+- MacOS
+   ```
+   brew tap adoptopenjdk/openjdk
+   brew install adoptopenjdk11 micronaut kafka
+   ```
+- Ubuntu
+   ```
+   sudo apt install kafkacat
+   ```
 
 ## Running
 
@@ -16,6 +21,8 @@ brew install adoptopenjdk11 micronaut kafka
 2. Start the kafka consumer
    ```
    ./consumer.sh
+   # or with kafkacat
+   kafkacat -b localhost:29092 -t message-topic
    ```
 
 3. Start the message producer
