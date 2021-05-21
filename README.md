@@ -1,12 +1,32 @@
-## Micronaut 2.4.4 Documentation
+# Micronaut Microservice
 
-- [User Guide](https://docs.micronaut.io/2.4.4/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.4.4/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.4.4/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+## Dependencies
+```
+brew tap adoptopenjdk/openjdk
+brew install adoptopenjdk11 micronaut kafka
+```
 
-## Feature http-client documentation
+## Running
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+1. Start the kafka broker and zookeeper
+    ```
+    docker compose up
+    ```
 
+2. Start the kafka consumer
+   ```
+   ./consumer.sh
+   ```
+
+3. Start the message producer
+   ```
+   ./gradlew run
+   ```
+
+4. Send at post request to `http://localhost:8080/` containing:
+    ```
+    {
+	    "name": "Minh",
+	    "message": "Hello World"
+    }
+    ```

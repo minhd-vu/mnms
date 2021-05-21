@@ -1,2 +1,3 @@
-mnms.$$HelloControllerDefinition$InterceptedDefinitionClass
-mnms.$HelloControllerDefinitionClass
+mnms.$MessageControllerDefinitionClass
+mnms.$MessageClient$InterceptedDefinitionClass
+mnms.$$MessageControllerDefinition$InterceptedDefinitionClass

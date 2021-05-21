@@ -1,3 +1,4 @@
 micronaut:
   application:
     name: mnms
+kafka.bootstrap.servers: localhost:29092
