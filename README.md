@@ -4,7 +4,7 @@
 - MacOS
    ```
    brew tap adoptopenjdk/openjdk
-   brew install adoptopenjdk11 micronaut kafka
+   brew install adoptopenjdk11 micronaut kafka kafkacat
    ```
 - Ubuntu
    ```
