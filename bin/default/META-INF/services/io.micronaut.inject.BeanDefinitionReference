@@ -1,4 +1,5 @@
 mnms.$MessageListenerDefinitionClass
 mnms.$MessageControllerDefinitionClass
+mnms.$MessageRepository$InterceptedDefinitionClass
 mnms.$MessageClient$InterceptedDefinitionClass
 mnms.$$MessageControllerDefinition$InterceptedDefinitionClass

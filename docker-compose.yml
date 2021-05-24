@@ -29,3 +29,21 @@ services:
             KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
             KAFKA_TOOLS_LOG4J_LOGLEVEL: ERROR
     
+    db:
+        image: postgres
+        hostname: db
+        container_name: db
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: password
+        ports:
+            - 5432:5432
+
+    adminer:
+        image: adminer
+        hostname: adminer
+        container_name: adminer
+        restart: always
+        ports:
+            - 8081:8080
+    

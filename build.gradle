@@ -25,7 +25,13 @@ dependencies {
     implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("javax.annotation:javax.annotation-api")
     implementation("io.micronaut:micronaut-validation")
+    annotationProcessor("io.micronaut.data:micronaut-data-processor:2.4.3")
+    implementation("io.micronaut.data:micronaut-data-hibernate-jpa:2.4.3")
+    implementation("io.micronaut.data:micronaut-data-jdbc")
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtime("io.micronaut.sql:micronaut-jdbc-tomcat")
+    
+    runtimeOnly("org.postgresql:postgresql")
     testImplementation("io.micronaut:micronaut-http-client")
     // compile group: "com.googlecode.json-simple", name: "json-simple", version: "1.1.1"
 }
