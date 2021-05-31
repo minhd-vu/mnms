@@ -1,6 +1,18 @@
+endpoints:
+  prometheus:
+    sensitive: false
+
 micronaut:
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        step: PT1M
+        descriptions: true
   application:
     name: mnms
+    
 kafka.bootstrap.servers: localhost:29092
 
 datasources:

@@ -10,7 +10,7 @@ import javax.persistence.*;
 
 @Entity
 @Table
-class Message {
+public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
