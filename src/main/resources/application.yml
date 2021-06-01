@@ -12,14 +12,19 @@ micronaut:
         descriptions: true
   application:
     name: mnms
+  executors:
+    consumer:
+      type: FIXED
     
 kafka:
   bootstrap:
     servers: localhost:29092
-  streams:
-      default:
-        processing.guarantee: "exactly_once"
-        auto.offset.reset: "earliest"
+  # security:
+  #   protocol: ssl
+  # streams:
+  #     default:
+  #       processing.guarantee: "exactly_once"
+  #       auto.offset.reset: "earliest"
 
 datasources:
   default:
@@ -34,4 +39,8 @@ jpa:
   default:
     entity-scan:
         packages: 'mnms'
-        
+
+rabbitmq:
+    uri: amqp://localhost:5672
+    username: guest
+    password: guest

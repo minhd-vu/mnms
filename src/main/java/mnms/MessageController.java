@@ -25,7 +25,7 @@ public class MessageController {
     }
 
     @Post(produces = MediaType.APPLICATION_JSON)
-    public Message post(@Body @Valid Message body) {
+    public Message postMessage(@Body @Valid Message body) {
         messageClient.sendMessage(Integer.toString(body.hashCode()), body);
         body.setMessage("Hello World");
         return body;

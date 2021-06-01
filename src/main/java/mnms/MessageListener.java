@@ -13,7 +13,7 @@ public class MessageListener {
     MessageRepository messageRepository;
 
     @Topic("message-topic")
-    public void receive(@KafkaKey String key, Message message) {
+    public void receiveMessage(@KafkaKey String key, Message message) {
         System.out.println(key + "\t" + message);
         messageRepository.save(message);
     }
