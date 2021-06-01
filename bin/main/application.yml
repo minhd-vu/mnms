@@ -13,7 +13,13 @@ micronaut:
   application:
     name: mnms
     
-kafka.bootstrap.servers: localhost:29092
+kafka:
+  bootstrap:
+    servers: localhost:29092
+  streams:
+      default:
+        processing.guarantee: "exactly_once"
+        auto.offset.reset: "earliest"
 
 datasources:
   default:
