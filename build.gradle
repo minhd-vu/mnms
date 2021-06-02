@@ -1,6 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "6.1.0"
     id("io.micronaut.application") version "1.4.5"
+    id "io.swagger.core.v3.swagger-gradle-plugin" version "2.1.9"
 }
 
 version = "0.1"
@@ -27,6 +28,10 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api")
     implementation("io.micronaut:micronaut-validation")
     annotationProcessor("io.micronaut.data:micronaut-data-processor:2.4.3")
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi:2.5.0")
+    // implementation("io.swagger.core.v3:swagger-annotations:2.5.0")
+    implementation("io.swagger.core.v3:swagger-jaxrs2:2.1.2")
+    implementation("io.swagger.core.v3:swagger-jaxrs2-servlet-initializer-v2:2.1.2")
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa:2.4.3")
     implementation("io.micronaut.rabbitmq:micronaut-rabbitmq")
     implementation("io.micronaut.data:micronaut-data-jdbc")
@@ -43,10 +48,10 @@ dependencies {
     // compile group: "com.googlecode.json-simple", name: "json-simple", version: "1.1.1"
 }
 
-
 application {
     mainClass.set("mnms.Application")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
     targetCompatibility = JavaVersion.toVersion("11")
