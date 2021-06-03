@@ -14,11 +14,8 @@ import io.micronaut.scheduling.annotation.Scheduled;
 public class StatusJob {
     // private static final Logger LOG = LoggerFactory.getLogger(StatusJob.class);
 
+    @Inject
     StatusClient statusClient;
-
-    public StatusJob(StatusClient statusClient) {
-        this.statusClient = statusClient;
-    }
 
     @Scheduled(fixedDelay = "5s")
     void executeLogger() {

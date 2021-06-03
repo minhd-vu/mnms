@@ -1,7 +1,7 @@
-mnms.$MessageRepository$InterceptedDefinitionClass
 mnms.$StatusClient$InterceptedDefinitionClass
-mnms.$MessageControllerDefinitionClass
-mnms.$$MessageControllerDefinition$InterceptedDefinitionClass
 mnms.$MessageListenerDefinitionClass
+mnms.$MessageControllerDefinitionClass
 mnms.$StatusJobDefinitionClass
+mnms.$MessageRepository$InterceptedDefinitionClass
 mnms.$MessageClient$InterceptedDefinitionClass
+mnms.$$MessageControllerDefinition$InterceptedDefinitionClass
