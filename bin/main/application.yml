@@ -11,6 +11,12 @@ micronaut:
         swagger-ui:
           paths: classpath:META-INF/swagger/views/swagger-ui
           mapping: /swagger-ui/**
+        redoc:
+          paths: classpath:META-INF/swagger/views/redoc
+          mapping: /redoc/**
+        rapidoc:
+          paths: classpath:META-INF/swagger/views/rapidoc
+          mapping: /rapidoc/**
   metrics:
     enabled: true
     export:
