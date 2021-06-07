@@ -1,6 +1,9 @@
 endpoints:
   prometheus:
     sensitive: false
+  info:
+    enabled: true
+    sensitive: true
 
 micronaut:
   router:
