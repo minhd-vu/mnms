@@ -7,7 +7,7 @@ import io.micronaut.configuration.kafka.annotation.KafkaListener;
 import io.micronaut.configuration.kafka.annotation.OffsetReset;
 import io.micronaut.configuration.kafka.annotation.Topic;
 
-@KafkaListener(offsetReset = OffsetReset.EARLIEST)
+@KafkaListener(offsetReset = OffsetReset.EARLIEST, threads = 10)
 public class MessageListener {
     @Inject
     MessageRepository messageRepository;

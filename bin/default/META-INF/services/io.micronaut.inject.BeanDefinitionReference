@@ -1,9 +1,9 @@
-mnms.$StatusClient$InterceptedDefinitionClass
 mnms.$MessageListenerDefinitionClass
+mnms.$StatusClient$InterceptedDefinitionClass
 mnms.$MessageControllerDefinitionClass
-mnms.$$MessageControllerDefinition$InterceptedDefinitionClass
 mnms.$StatusJobDefinitionClass
-mnms.$MessageClient$InterceptedDefinitionClass
 mnms.$ChannelPoolListenerDefinitionClass
-mnms.$StatusDefinitionClass
 mnms.$MessageRepository$InterceptedDefinitionClass
+mnms.$MessageClient$InterceptedDefinitionClass
+mnms.$$MessageControllerDefinition$InterceptedDefinitionClass
+mnms.$StatusDefinitionClass
