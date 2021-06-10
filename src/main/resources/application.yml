@@ -3,7 +3,10 @@ endpoints:
     sensitive: false
   info:
     enabled: true
-    sensitive: true
+    sensitive: false
+  metrics:
+    enabled: true
+    sensitive: false
 
 micronaut:
   router:
@@ -36,12 +39,8 @@ micronaut:
 kafka:
   bootstrap:
     servers: localhost:29092
-  # security:
-  #   protocol: ssl
-  # streams:
-  #     default:
-  #       processing.guarantee: "exactly_once"
-  #       auto.offset.reset: "earliest"
+  health:
+      enabled: true
 
 datasources:
   default:
